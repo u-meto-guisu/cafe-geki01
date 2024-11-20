@@ -1,16 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
-memo
-yellow:F5B101
-black:191311
-brown:332500
-lightbrown:997000
-ivory:f8f4e6
-
-
-
 .fadeIn {
   transform: translate3d(0, 50px, 0);
   transition: 1s;
