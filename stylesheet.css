@@ -1,0 +1,542 @@
+* {
+  box-sizing: border-box;
+}
+
+memo
+yellow:F5B101
+black:191311
+brown:332500
+lightbrown:997000
+ivory:f8f4e6
+
+
+
+.fadeIn {
+  transform: translate3d(0, 50px, 0);
+  transition: 1s;
+  opacity: 0;
+}
+.fadeIn.animated {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+body{
+ font-family: "Shippori Mincho B1", serif;
+ color: 332500;
+ background-color: #f8f4e6;
+ margin: 0;
+ padding: 0;
+ font-weight: 400;
+ -webkit-appearance: none;
+ appearance: none;
+}
+
+.shippori-mincho-b1-regular {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: none;
+  height: 53px;
+  position:fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  background-color: rgba(51, 37, 0, 0.9);
+}
+li+ li {
+  border-left: 1px solid #d4dcd3;
+}
+nav.globalMenuSp {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 37, 0, 0.9);
+    color: white;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+}
+
+nav.globalMenuSp ul {
+    background-color: rgba(51, 37, 0, 0.9);
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+nav.globalMenuSp ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px dotted #d4dcd3;
+}
+
+/* 最後はラインを描かない */
+nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+nav.globalMenuSp ul li a {
+    display: block;
+    color: white;
+    padding: 1em 0;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+    transform: translateY(0%);
+}
+.navToggle {
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 3;
+    text-align: center;
+    border-radius: 1px;
+    display: none;
+}
+
+.navToggle span {
+    display: block;
+    position: absolute;    /* .navToggleに対して */
+    width: 30px;
+    border-bottom: solid 2px #abb1ad;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    right: 5px;
+}
+
+.navToggle span:nth-child(1) {
+    top: 5px;
+}
+
+.navToggle span:nth-child(2) {
+    top: 13px;
+}
+
+.navToggle span:nth-child(3) {
+    top: 21px;
+}
+
+.navToggle span:nth-child(4) {
+    border: none;
+    color: #d4dcd3;
+    font-size: 9px;
+    font-weight: bold;
+    top: 34px;
+}
+/* 最初のspanをマイナス45度に */
+.navToggle.active span:nth-child(1) {
+    top: 13px;
+    right: 5px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* 2番目と3番目のspanを45度に */
+.navToggle.active span:nth-child(2),
+.navToggle.active span:nth-child(3) {
+    top: 13px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.top-btn {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+a.top-btn {
+  color: white;
+  opacity:0.7;
+  text-decoration: none;
+}
+a.header-btn {
+  color: white;
+  opacity:0.7;
+  text-decoration: none;
+}
+a:hover{
+  opacity:1;
+}
+.header-right{
+  float: right;
+  padding-right: 30px;
+}
+
+.header-right li {
+  float: left;
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 25px;
+  display: block;
+  padding-left: 10px;
+}
+
+.midashi {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 6vh;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 18vh;
+}
+
+.storywrapper{
+  margin-top: 5vh;
+}
+.explain{
+  text-align: center;
+  font-weight: normal;
+  font-size: 17px;
+}
+.explainformobile{
+  display: none;
+}
+
+.container {
+  max-width: 110em;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#top {
+  width: 100%;
+  display: none;
+}
+#mobiletop {
+  width: 100%;
+  display: none;
+}
+
+.snswrapper{
+  padding-top: 17vh;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#umeinsta{
+  font-size: 3.5em;
+  margin: 0;
+  padding: 0;
+}
+#umex{
+  font-size: 3.75em;
+  text-decoration: none;
+  color: #997000;
+  opacity: 0.7;
+  margin-left: 0.4em;
+}
+#umex:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+#umeyoutube{
+  font-size: 3.2em;
+  margin-left: 0.4em;
+}
+#umetiktok{
+  font-size: 3.1em;
+  margin-left: 0.4em;
+}
+
+#snswani{
+  width: 35vw;
+  height: auto;
+}
+
+.castwrapper{
+  width: 60%;
+  margin:0 auto;
+  font-weight: normal;
+}
+
+.profile{
+display: flex;
+justify-content: center;
+gap:2vw;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1.5em;
+}
+
+.castphoto{
+  width: 14vw;
+  height: auto;
+  margin:0;
+  transition-duration: 0.5s; /*変化の時間*/
+}
+.castphoto:hover{
+  cursor: pointer; /*カーソルをポインターにする*/
+  filter: brightness(1.5);
+}
+
+#popup1,#popup2,#popup3,#popup4{
+  display: none; /* label でコントロールするので input は非表示に */
+  -webkit-appearance: none;
+}
+
+.popup-overlay{
+  display: none; /* input にチェックが入るまでは非表示に */
+}
+#popup1:checked ~ .popup-overlay {
+  display: block;
+  z-index: 99999;
+  background-color: #00000070;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+#popup2:checked ~ .popup-overlay {
+  display: block;
+  z-index: 99999;
+  background-color: #00000070;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+#popup3:checked ~ .popup-overlay {
+  display: block;
+  z-index: 99999;
+  background-color: #00000070;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+#popup4:checked ~ .popup-overlay {
+  display: block;
+  z-index: 99999;
+  background-color: #00000070;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.popup-window {
+  display: flex;
+  width: 42vw;
+  height: auto;
+  padding: 0.7em;
+  background-color: #f8f4e6;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: flex-start;
+}
+
+.popupcastimg{
+  width:15vw;
+  height: auto;
+  margin:auto;
+}
+
+.popuph2{
+  font-size: 22px;
+  margin: 0 auto 0.5em auto;
+  text-align: left;
+  padding-left: 1.5em;
+}
+.fa-instagram {
+  padding-left: 0.8em;
+  color: #997000;
+  opacity: 0.7;
+}
+.fa-earth-americas{
+    margin-left: 0.35em;
+    font-size:0.89em;
+    color: #997000;
+    opacity: 0.7;
+}
+.fa-youtube{
+  margin-left: 0.35em;
+  font-size:0.88em;
+  color: #997000;
+  opacity: 0.7;
+}
+.fa-tiktok{
+  margin-left: 0.35em;
+  font-size:0.85em;
+  color: #997000;
+  opacity: 0.7;
+}
+.forx{
+  margin-left: 0.25em;
+  text-decoration: none;
+  font-size: 24.4px;
+  color: #997000;
+  opacity: 0.7;
+}
+.fa-instagram:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.fa-earth-americas:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.fa-youtube:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.fa-tiktok:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.forx:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.popup-text {
+  font-size: 14px;
+  font-weight: normal;
+  padding-left:2em;
+  text-align: justify;
+  margin-top: 0.3em;
+  text-justify: inter-ideograph;
+}
+
+.popup-text:not(:last-of-type) {
+  margin-bottom: 1em
+}
+
+.popup-close {
+  cursor: pointer;
+  position: absolute;
+  top: -1.5em;
+  right: 0;
+}
+.fa-xmark{
+  top:0;
+  color: #f8f4e6;
+  font-size: 1.1em;
+}
+.fa-xmark:hover{
+  color: #9ea1a3;
+}
+
+.name{
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+  margin-top: 0.5em;
+}
+
+table.stafftable{
+  width: 50vw;
+  align-items: center;
+  margin:0 auto;
+}
+table.stafftable tr td:nth-of-type(1) {
+  text-align: right;
+  width: 50%;
+  font-size: 16px;
+  padding-right: 0.5em;
+  padding-bottom: 1.5em;
+}
+table.stafftable tr td:nth-of-type(2) {
+  text-align: left;
+  width: 50%;
+  font-size: 18px;
+  padding-left: 0;
+  padding-bottom: 1.3em;
+}
+
+.schedulewrapper{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.days{
+  font-size: 20px;
+}
+
+.theatre{
+  margin-top: 6vh;
+}
+
+.ticketwrapper{
+  text-align: center;
+  justify-content: center;
+}
+.ticket p{
+  font-size: 20px;
+  line-height: 2.3;
+  margin:0;
+}
+
+#info{
+  font-size: 16px;
+  margin-top: 2vh;
+}
+
+.ticketinfo{
+  font-size: 13px!important;
+  color: rgba(71, 89, 80,1);
+  visibility: hidden;
+}
+.fa-circle-question{
+  margin-left: 0.2em;
+  font-size: 0.85em;
+  opacity: 0.4;
+}
+.fa-circle-question:hover{
+  opacity: 1;
+}
+.fa-circle-exclamation{
+  margin-left: 0.2em;
+}
+
+.button-1 {
+  margin: 2.5em auto 0 auto;
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 1.4em;
+  color: #f8f4e6;
+  background: #332500;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #332500 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+
+.button-1:hover {
+  color: #332500;
+  background: #f8f4e6;
+}
+
+footer {
+  margin-top: 20vh;
+  padding: 20px;
+  text-align: center;
+}
+
+
+footer p {
+  opacity: 0.5;
+}
