@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body{
  font-family: "Shippori Mincho B1", serif;
  color: 332500;
@@ -417,13 +418,13 @@ margin-top: 1.5em;
 .popup-close {
   cursor: pointer;
   position: absolute;
-  top: -1.5em;
+  top: -1.3em;
   right: 0;
 }
 .fa-xmark{
   top:0;
   color: #f8f4e6;
-  font-size: 1.1em;
+  font-size: 0.8em;
 }
 .fa-xmark:hover{
   color: #9ea1a3;
