@@ -221,14 +221,31 @@ a:hover{
   width: 60%;
   margin: 0 auto;
 }
-
+#cafegekikun{
+  width: 8vw;
+}
+#forsns{
+  width:11vw;
+}
+.puyon {
+  animation: puyon 2.5s infinite 0s;
+}
+@keyframes puyon {
+  0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
+  40%  { transform: scale(0.95, 1.2) translate(0%, -10%); }
+  50%  { transform: scale(1.1, 0.9) translate(0%, 5%); }
+  60%  { transform: scale(0.95, 1.05) translate(0%, -3%); }
+  70%  { transform: scale(1.05, 0.95) translate(0%, 3%); }
+  80%  { transform: scale(1.0, 1.0) translate(0%, 0%); }
+  100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+}
 #umeinsta{
-  font-size: 3.5em;
+  font-size: 3em;
   margin: 0;
   padding: 0;
 }
 #umex{
-  font-size: 3.75em;
+  font-size: 3.25em;
   text-decoration: none;
   color: #997000;
   opacity: 0.7;
@@ -239,17 +256,17 @@ a:hover{
   cursor: pointer;
 }
 #umeyoutube{
-  font-size: 3.2em;
-  margin-left: 0.4em;
-}
-#umetiktok{
-  font-size: 3.1em;
+  font-size: 2.7em;
   margin-left: 0.4em;
 }
 
 #snswani{
   width: 35vw;
   height: auto;
+}
+
+.storywrapper{
+  margin-top: 8vh;
 }
 
 .castwrapper{
@@ -465,7 +482,12 @@ table.stafftable tr td:nth-of-type(2) {
 .days{
   font-size: 20px;
 }
-
+#sat{
+  color: #274a78;
+}
+#sun{
+  color: #d3381c;
+}
 .theatre{
   margin-top: 6vh;
 }
