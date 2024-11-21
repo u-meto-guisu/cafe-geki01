@@ -15,6 +15,17 @@ function handle(mm) {
     });
   }
 }
+$(function(){
+  //「開く」がクリックされた場合
+  $('.popup-open').on('click',function(){
+    $('body').css('overflow-y', 'hidden');  // 本文の縦スクロールを無効
+  });
+  //「閉じる」がクリックされた場合
+  $('.popup-close').on('click',function(){
+    $('body').css('overflow-y','auto');     // 本文の縦スクロールを有効
+  });
+});
+
 
 $(function(){
   $('.top-btn').click(function(){
@@ -89,14 +100,3 @@ $(window).on('load scroll', function (){
   });
 });
 })
-
-
-$('.popup-open').click(function() {
-  $('html, body').css('overflow', 'hidden');
-
-});
-
-$('.popup-close').click(function() {
-  $('html, body').removeAttr('style');
-
-});
