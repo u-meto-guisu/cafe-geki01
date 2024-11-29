@@ -245,9 +245,9 @@ footer{
   .popup-window {
     display: flex;
     flex-direction: column;
-    width: 80vw;
+    width: 79vw;
     height: 80vh;
-    padding: 0.8em;
+    padding: 1em;
   }
   .popupexplain{
     overflow-y: scroll;
@@ -261,7 +261,7 @@ footer{
   }
 
   .popuph2{
-    font-size: 18px;
+    font-size: 19px;
     margin-top: 0.5em;
     padding-left: 0.5em;
   }
@@ -270,7 +270,7 @@ footer{
   }
 
   .popup-text {
-    font-size: 12px;
+    font-size: 13px;
     padding: 0;
     margin: 0.5em;
   }
@@ -300,36 +300,36 @@ footer{
     margin: 0 auto;
   }
   .days p{
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .theatre{
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
-.theatreh2{
-    font-size: 15px;
+.theatre h2{
+    font-size: 15.5px;
   }
+
+.theatre p{
+  font-size: 12px;
+}
+
+#station{
+  font-size: 16px;
+}
 
  .ticketwrapper{
    width: 90%;
    margin: 0 auto;
  }
- .ticket p{
-   font-size: 16px;
- }
- #info{
-   font-size: 12px;
- }
 
- .ticketinfo{
-   font-size: 11px!important;
- }
+.ticket p{
+  font-size: 14px;
+}
+.ticket h3{
+  font-size: 22px;
+}
 
- .fa-circle-question{
-   margin-left: 0.2em;
-   font-size: 0.85em;
-   opacity: 0.4;
- }
  .button-1{
    font-size: 1em;
    margin-top: 3em;
