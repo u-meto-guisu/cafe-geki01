@@ -486,6 +486,9 @@ table.stafftable tr td:nth-of-type(2) {
   width: 60%;
   margin: 0 auto;
 }
+#info{
+  font-size: 17px;
+}
 
 .days{
   font-size: 21px;
