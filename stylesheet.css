@@ -28,6 +28,14 @@ header {
   top: 0;
   background-color: rgba(51, 37, 0, 0.9);
 }
+#light{
+  width: 8vw;
+  position: fixed;
+  z-index: 8;
+  top:53px;
+  left:100px;
+}
+
 li+ li {
   border-left: 1px solid #d4dcd3;
 }
@@ -480,49 +488,46 @@ table.stafftable tr td:nth-of-type(2) {
 }
 
 .days{
-  font-size: 20px;
+  font-size: 21px;
 }
-#sat{
+.sat{
   color: #274a78;
 }
-#sun{
+.sun{
   color: #d3381c;
 }
 .theatre{
-  margin-top: 6vh;
+  margin-top: 5vh;
+}
+.theatre h2{
+  margin-bottom: 0.1em;
+}
+.theatre p{
+  margin:0.2em;
+}
+#station{
+  font-size: 19px;
+  margin-top: 0.5em;
 }
 
 .ticketwrapper{
   text-align: center;
   justify-content: center;
 }
+
 .ticket p{
-  font-size: 20px;
-  line-height: 2.3;
-  margin:0;
+  font-size: 17px;
 }
 
-#info{
-  font-size: 16px;
-  margin-top: 2vh;
+.ticket h3{
+  font-size: 26px;
+  font-weight: normal;
+  margin: 0.3em;
+}
+.sunday{
+  margin-top: 8vh;
 }
 
-.ticketinfo{
-  font-size: 13px!important;
-  color: rgba(71, 89, 80,1);
-  visibility: hidden;
-}
-.fa-circle-question{
-  margin-left: 0.2em;
-  font-size: 0.85em;
-  opacity: 0.4;
-}
-.fa-circle-question:hover{
-  opacity: 1;
-}
-.fa-circle-exclamation{
-  margin-left: 0.2em;
-}
 
 .button-1 {
   margin: 2.5em auto 0 auto;
