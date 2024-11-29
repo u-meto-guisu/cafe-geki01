@@ -299,6 +299,9 @@ footer{
     width: 90%;
     margin: 0 auto;
   }
+  #info{
+    font-size: 14px;
+  }
   .days p{
     font-size: 17px;
   }
